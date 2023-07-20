@@ -9,7 +9,7 @@ console.log(`c`, c);
 console.log(`d`, d);
 
 // Example 2
-// ? Nested Array
+// ? Deeply Nested Array
 const numsArray = [2, 3, [6, 9]];
 const [e, f, [g, h]] = numsArray;
 console.log(`e`, e);
@@ -28,7 +28,7 @@ const hotel = {
     monday: { open: "10:00AM", close: "10:00PM" },
   },
 };
-// ? give same name as object properties
+// ? give same name as object properties names to destructure them
 const { resturantName, hotelLocation, mainMenu } = hotel;
 console.log(`Name`, resturantName);
 console.log(`Location`, hotelLocation);
