@@ -8,5 +8,5 @@ function functionDeclaration() {
 functionExpression();
 let functionExpression = () => {
   console.log("Example of Hoisted Function Expression or Arrow Function");
-  // Error : Cannot access 'test' before initialization
+  // Error : Cannot access 'functionExpression' before initialization
 };
