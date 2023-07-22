@@ -1,5 +1,6 @@
 // * Panagram String
-// All the alphabet of of English Language should appear inside the one sentence. All from a-z should be inside the whole sentence
+// All the alphabet of of English Language should appear inside the one sentence.
+// Means All the characters from a-z should be inside the whole sentence and if any one is not present, string is not panagram
 
 const panagramString = "The quick brown fox jumps over a lazy dog";
 
