@@ -36,7 +36,6 @@ const sortArrayOfObject = (obj, key, type = "asce") => {
       }
     }
   }
-  //   console.log("Sorted Obj", obj);
   return obj;
 };
 
