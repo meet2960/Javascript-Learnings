@@ -1,4 +1,5 @@
-// * Custom Array Flatten Method, without using inbuild method to flatten the given array
+// ? Custom Array Flatten Method, without using inbuild method to flatten the given array
+// * Flatten means, create a single array from deeply nested array and create a single 1D array from that nested array.
 
 const arr = [0, [1, 2], [3, 4], [5, 6, [7, 8], 9], [10, 11, 12]];
 
