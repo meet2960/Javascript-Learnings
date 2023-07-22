@@ -1,4 +1,5 @@
 // * Infinite Currying
+// Currying means Transforming a function into a nested series of functions, each taking single arguments
 
 function add(a) {
   return function (b) {
