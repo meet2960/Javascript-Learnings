@@ -24,7 +24,8 @@ for (let i = 0; i < newArray.length; i++) {
 
 // ? (For in) : used to get index's of the elements of array
 for (let index in newArray) {
-  console.log("Index", index);
+  console.log("Index", index); // Get all Index
+  console.log(newArray[index]); // Get all Values
 }
 
 // ? (For of) : used to get the elements value of the array
@@ -33,7 +34,8 @@ for (let value of newArray) {
 }
 
 // ? For Each in array in Js
-// ? Foreach take one call back function with three parameter, one is elements of array, second indexm, third array itself
+// ? For Each take one call back function with three parameter, one is elements of array, second index, third is array itself
+
 newArray.forEach((items, index, array) => {
   console.log("Index : " + index + " Value : " + items);
 });
