@@ -65,8 +65,8 @@ let iterationObj = {
 console.log("Car object is : ", iterationObj);
 // ? To Iterate on this object, we can use for in loop
 for (let key in iterationObj) {
-  console.log("Key : ", key); // We get all the key
-  console.log("Value : ", iterationObj[key]); // we get all the values
+  console.log("Key : ", key); // Get all the key
+  console.log("Value : ", iterationObj[key]); //  Get all the values
 }
 
 // * If We want to add an Symbol to our Obj, we can do by this syntax :-
