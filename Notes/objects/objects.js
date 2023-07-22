@@ -40,22 +40,21 @@ console.log(`Current age is ${personObj.ageCalculator()}`);
 let simpleFunObj = {
   name: "JavaScript",
   getName: function () {
-    // console.log(`Hello ${name} Welcome to Party !!!`);
-    console.log(`Hello ${this.name} Welcome to Party !!!`);
+    console.log(`Person name in Simple Function ${this.name}`);
     return this.name;
   },
 };
-console.log(`Access Name ${simpleFunObj.getName()}`);
+console.log(`Returned From Normal Function ${simpleFunObj.getName()}`);
 
 // * Using Arrow function with this, will always refer to window obj or the top global scope, not the person object
 let arrowFunObj = {
   name: "John",
   getName: () => {
-    console.log(`Person Name is ${this.name}`);
+    console.log(`Person Name in Arrow Function is ${this.name}`);
     return this.name;
   },
 };
-arrowFunObj.getName();
+console.log("Returned From Arrow This", arrowFunObj.getName()); // undefined
 
 // * Iteration on Object
 let iterationObj = {
