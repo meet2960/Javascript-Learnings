@@ -1,6 +1,7 @@
-// ? Create a custom sort Function without using inbuild sort method to sort the array of object by given by and also provide by which order we have to sort either ascending or descending.
+// ? Question:- Create a custom sort Function without using inbuild sort method to sort the array of object by given by and also provide by which order we have to sort either ascending or descending.
+// We have to pass object, key name, by which we want to sort, and type or sorting.
 
-const users = [
+const usersObj = [
   {
     name: "John",
     age: 25,
@@ -39,8 +40,8 @@ const sortArrayOfObject = (obj, key, type = "asce") => {
   return obj;
 };
 
-const sortAgeByAsce = sortArrayOfObject(users, "age", "asce");
+const sortAgeByAsce = sortArrayOfObject(usersObj, "age", "asce");
 console.log("Age Sorted by Ascending", sortAgeByAsce);
 
-const sortNameByDesc = sortArrayOfObject(users, "name", "desc");
+const sortNameByDesc = sortArrayOfObject(usersObj, "name", "desc");
 console.log("Name Sorted by Descending", sortNameByDesc);
