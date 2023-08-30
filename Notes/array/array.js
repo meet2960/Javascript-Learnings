@@ -39,3 +39,14 @@ for (let value of newArray) {
 newArray.forEach((items, index, array) => {
   console.log("Index : " + index + " Value : " + items);
 });
+
+// * Check is a given array is array or not
+function checkArray(arr) {
+  return Array.isArray(arr);
+}
+console.log(checkArray([])); // true
+console.log(checkArray({})); // False
+
+// * How to empty an array in Javascript?
+const numsArr = [1, 2, 3, 4, 5, 6];
+numsArr.length = 0; // This will empty an array.

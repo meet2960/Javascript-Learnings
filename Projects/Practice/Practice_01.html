@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg-black {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div>
+        <h1 class="heading" id="title">
+            DOM Manipulation
+            <span style="display: none">With JavaScript</span>
+        </h1>
+        <div>
+            <p>Difference Between</p>
+            <ul>
+                <li>textContent</li>
+                <li>innerText</li>
+                <li>innerHTML</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    const title = document.getElementById("title");
+    title.setAttribute("data", "headingData")
+    console.log("Text Content", title.textContent);
+    console.log("InnerText", title.innerText);
+    console.log("innerHTML", title.innerHTML);
+</script>
+
+</html>

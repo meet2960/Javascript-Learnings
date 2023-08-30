@@ -1,6 +1,6 @@
 // * Find Unique Elements from Array without using Set Method
 
-// 1st Method using IndexOf Method
+// ? 1st Method using IndexOf Method
 const numsArr = [12, 1, 1, 35, 35, 1, 10, 34, 1, 35];
 const findUnique = (arr) => {
   return arr.filter(
@@ -9,7 +9,7 @@ const findUnique = (arr) => {
 };
 console.log("Unique Array", findUnique(numsArr));
 
-// 2nd Method using For Loops
+// ? 2nd Method using For Loops
 const usingForLoop = (arr) => {
   let uniqueArray = [];
   let status = false;
