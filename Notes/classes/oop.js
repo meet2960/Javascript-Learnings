@@ -18,7 +18,7 @@ function User(username, loginCount, isLoggedIn) {
   this.username = username;
   this.loginCount = loginCount;
   this.isLoggedIn = isLoggedIn;
-  return this; // we we don't write return this, then also it will return by defult, as it is defined implicitly
+  return this; // we don't write return this, then also it will return by defult, as it is defined implicitly
 }
 
 const userOne = User("Hello", 12, true);
@@ -26,7 +26,7 @@ const userTwo = User("World", 24, false); // Creating Second Instance
 console.log("userOne", userOne); // Ignore other properties, but other than that, properties we defined are also added in this
 // ? If we console userOne after creating userTwo, we can see that the values of userOne are replaced by userTwo values. So this will create a problem, everytime we create a new object, its previous values will be overwritten
 
-// ? Here is we have used constructor function, then it will give use a new copy everytime we invoke it. So this will be very beneficial, then the simple function method
+// ? Here  we have used constructor function, then it will give use a new copy everytime we invoke it. So this will be very beneficial, then the simple function method
 
 // * Modified Code
 const userThree = new User("Hello", 12, true);
