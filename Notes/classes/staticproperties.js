@@ -13,7 +13,7 @@ class User {
 }
 
 const userOne = new User("Meet");
-// console.log(userOne.createUniqueId()); // this will throw an error, as the method is created with static keyword
+// console.log(userOne.createUniqueId()); // ? this will throw an error, as the method is created with static keyword
 
 class Teacher extends User {
   constructor(username, email) {
