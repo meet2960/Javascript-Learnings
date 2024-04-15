@@ -7,6 +7,9 @@ const numsArr = [12, 35, 1, 10, 34, 1];
 
 // 1st Solution
 const secondLargest = (arr) => {
+  if (numsArr.length <= 1) {
+    return numsArr[0];
+  }
   const uniqueArray = Array.from(new Set(arr)); // Time_Complexity: O(n)
   uniqueArray.sort((a, b) => b - a); // Time_Complexity: O(nlogn)
   if (uniqueArray.length >= 2) {
@@ -21,7 +24,6 @@ console.log("Using InBuild Methods", secondLargest(numsArr)); // Time_Complexity
 const secondLargestOptimized = (arr) => {
   let largest = Number.NEGATIVE_INFINITY;
   let secondLargest = Number.NEGATIVE_INFINITY;
-
   // Time_Complexity: O(n)
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > largest) {
