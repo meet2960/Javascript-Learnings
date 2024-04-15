@@ -1,3 +1,5 @@
+// * 1st Example
+
 function outerFunction(carName) {
   let name = "John Wick";
   function innerFunction() {
@@ -10,7 +12,7 @@ console.log(innerFunDefination); // returns the function definition
 console.log(innerFunDefination()); // returns the function value
 console.log("Calling Display Method Outside Directly", outerFunction()()); // using this syntax also, will get same result
 
-// Another Example
+// * 2nd Example
 let counter = function () {
   let count = 0;
   let innerCounter = function () {
@@ -23,3 +25,16 @@ let innerCount = counter();
 console.log(innerCount()); // 1
 console.log(innerCount()); // 2
 console.log(innerCount()); // 3
+
+// * 3rd Example
+function outer() {
+  console.log("Inside 3rd Example");
+  const x = 5;
+
+  function inner() {
+    console.log(x);
+  }
+  return inner;
+}
+const getInner = outer();
+getInner();

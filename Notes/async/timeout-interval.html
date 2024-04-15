@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeout/Interval</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <h1 class="heading">SetTimeout Example</h1>
+    <button id="stop">Stop</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 class="heading">SetInterval Example</h1>
+    <button id="startinterval">Start</button>
+    <button id="stopinterval">Stop</button>
+  </body>
+  <script>
+    // SetTimeout function will execute function inside it after given time in the function, it will only run after the time is completed
+    setTimeout(() => {
+      console.log("Example of Timeout"); // prints after two seconds
+    }, 2000);
+
+    const heading = document.querySelector(".heading");
+    const changeText = function () {
+      heading.innerHTML = "Example of Timeout Function";
+    };
+    const changeRef = setTimeout(changeText, 2000);
+    document.querySelector("#stop").addEventListener("click", () => {
+      clearTimeout(changeRef);
+      console.log("Stop Button");
+    });
+
+    // SetInterval Example
+    const intervalFn = function (str1) {
+      console.log("SetInterval", str1);
+    };
+    let intervalId;
+    document.querySelector("#startinterval").addEventListener("click", () => {
+      console.log("Start Button");
+      intervalId = setInterval(intervalFn, 1000, "param1");
+    });
+    document.querySelector("#stopinterval").addEventListener("click", () => {
+      console.log("Stop Button");
+      clearInterval(intervalId);
+    });
+  </script>
+</html>
