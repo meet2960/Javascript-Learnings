@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing Element</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <body class="bg-black">
+      <h1>Traversing Elements and their Relations</h1>
+      <div class="parent">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+      </div>
+    </body>
+    <script>
+      const parent = document.querySelector(".parent");
+      //   console.log(parent);
+      //   console.log(parent.children); // HTML Collection
+      //   console.log(parent.children[1]);
+
+      /*    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+      } */
+      //   parent.children[1].style.color = "Orange"; // manipulate its css
+      //   console.log("First Child", parent.firstElementChild);
+      //   console.log("Last Element", parent.lastElementChild);
+      const dayOne = document.querySelector(".days"); // this will cost more performance
+      //   console.log("parentElement", dayOne.parentElement); // get parent element
+      //   console.log("nextElementSibling", dayOne.nextElementSibling); // get next Sibling
+
+      console.log("NODES", parent.childNodes); // Each line break is consider as a node list in DOM, but it will be only one for each element, comment is also consider as a node list
+    </script>
+  </body>
+</html>
